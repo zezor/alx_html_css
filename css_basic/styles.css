@@ -1,0 +1,33 @@
+/* Make body a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* optional: remove default body margin */
+  min-height: 100vh; /* ensures body fills the viewport */
+}
+
+/* Make main a flex container in row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* allows main to expand automatically */
+}
+
+/* Article takes 2/3 of the width */
+article {
+  flex: 2; 
+  overflow-y: auto; /* enables vertical scrolling */
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+  flex: 1; 
+  overflow-y: auto; /* enables vertical scrolling */
+}
+
+/* Optional styling for header and footer */
+header, footer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
