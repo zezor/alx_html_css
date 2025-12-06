@@ -1,0 +1,34 @@
+:root{--max-width:1000px;--accent:#ff6565;--bg:#fff;--text:#10203a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+.site-header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,26,51,0.9),rgba(11,26,51,0.6));color:#fff}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.main-nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hamburger{display:none;background:transparent;border:none;color:#fff;font-size:20px}
+.hero{background:linear-gradient(180deg,rgba(11,26,51,0.9),rgba(11,26,51,0.6)), url('assets/hero-bg.svg') center/cover no-repeat;min-height:60vh;display:flex;align-items:center}
+.hero-inner{max-width:900px;margin:0 auto;padding:60px 16px;text-align:center;color:#fff}
+.cta{background:var(--accent);color:#fff;border:none;padding:12px 20px;border-radius:30px;cursor:pointer}
+.cta:hover{opacity:0.9}
+.services{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px 16px}
+.service{width:220px;text-align:center}
+.results-grid{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px 16px}
+.result{background:var(--accent);color:#fff;padding:20px;border-radius:8px;text-align:center}
+.contact-form{max-width:420px;margin:0 auto;display:flex;flex-direction:column;gap:12px;padding:20px}
+.contact-form input,.contact-form textarea{padding:10px;border:1px solid #ddd;border-radius:6px}
+.site-footer{background:#0b1a33;color:#fff;padding:30px 0;text-align:center}
+@media (max-width:480px){.main-nav{display:none}.hamburger{display:block}.hero-inner h1{font-size:20px}.services{flex-direction:column;align-items:center}}
+/* pentagon shapes (CSS only) */
+.result.pent { width:120px; height:120px; position:relative; background:transparent; }
+.result.pent::before {
+  content: '';
+  position:absolute;
+  left:0; right:0; margin:auto;
+  top:8px;
+  width:0;
+  border-bottom:64px solid var(--accent);
+  border-left:36px solid transparent;
+  border-right:36px solid transparent;
+  transform:rotate(0deg);
+}
+.result.pent p{margin-top:78px;color:#fff}
