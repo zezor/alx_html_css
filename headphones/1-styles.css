@@ -5,6 +5,8 @@ body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--tex
 .site-header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,26,51,0.9),rgba(11,26,51,0.6));color:#fff}
 .site-header .container{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .main-nav a{color:#fff;text-decoration:none;margin-left:18px}
+.what-we-do{padding:40px 16px;text-align:center;background-color: #fff;}
+.what-we-do h2{font-size:28px;margin-bottom:20px;text-align:center}
 .hamburger{display:none;background:transparent;border:none;color:#fff;font-size:20px}
 .hero{background:linear-gradient(180deg,rgba(11,26,51,0.9),rgba(11,26,51,0.6)), url('assets/hero-bg.svg') center/cover no-repeat;min-height:60vh;display:flex;align-items:center}
 .hero-inner{max-width:900px;margin:0 auto;padding:60px 16px;text-align:center;color:#fff}
